@@ -1,0 +1,23 @@
+
+image:
+  name: api
+  replicas: 1
+  repository: velat/fitness_multiagent
+  tag: "18164697808"
+  pullPolicy: IfNotPresent
+  containerPort: 8000
+
+
+  
+service:
+  name: api-service
+  port: 80
+  targetPort: 8000
+
+
+env:
+  configMapName: api-config
+  ollamaApiUrl: "http://ollama-service:11434"
+
+
+ 

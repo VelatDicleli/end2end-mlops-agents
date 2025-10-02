@@ -1,0 +1,22 @@
+nutrition_task:
+  description: >
+    Create a personalized nutrition plan for {topic}.
+    Consider dietary preferences, restrictions, and health goals.
+  expected_output: >
+    A detailed nutrition plan including meal suggestions, portion sizes,
+    and nutritional information.
+  agent: nutritionist
+
+
+exercise_task:  
+  description: >
+    Develop a customized exercise regimen for {topic}.
+  description: >
+    Review the context you got and expand each topic into a full section for a report.
+    Make sure the report is detailed and contains any and all relevant information.
+  expected_output: >
+    A detailed exercise plan including workout types, durations, and
+    intensity levels.
+  agent: exercise_recommender
+
+

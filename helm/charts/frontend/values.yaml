@@ -1,0 +1,21 @@
+
+image:
+  name: frontend
+  replicas: 3
+  repository: velat/fitness_frontend
+  tag: "18168568132"
+  pullPolicy: IfNotPresent
+  containerPort: 80
+
+
+  
+service:
+  name: frontend-service
+  port: 80
+  targetPort: 80
+
+
+
+
+
+ 

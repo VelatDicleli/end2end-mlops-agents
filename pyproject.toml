@@ -1,0 +1,25 @@
+[project]
+name = "fitness"
+version = "0.1.0"
+description = "fitness using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[tools]>=0.193.2,<1.0.0",
+    "fastapi>=0.117.1",
+    "uvicorn>=0.37.0",
+]
+
+[project.scripts]
+fitness = "fitness.main:run"
+run_crew = "fitness.main:run"
+train = "fitness.main:train"
+replay = "fitness.main:replay"
+test = "fitness.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

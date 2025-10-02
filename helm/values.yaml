@@ -1,0 +1,19 @@
+
+apiVersion: v2
+name: fitness-multiagent
+version: 0.1.0
+dependencies:
+  - name: api
+    version: 0.1.0
+    repository: file://./charts/api
+    condition: api.enabled
+  - name: ollama
+    version: 0.1.0
+    repository: file://./charts/ollama
+    condition: ollama.enabled
+  - name: frontend
+    version: 0.1.0
+    repository: file://./charts/frontend
+    condition: frontend.enabled
+
+

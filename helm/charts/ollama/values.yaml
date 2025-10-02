@@ -1,0 +1,15 @@
+
+image:
+  name: ollama
+  repository: velat/ollama
+  tag: latest
+  pullPolicy: IfNotPresent
+  containerPort: 11434
+
+
+service:
+  name: ollama-service
+  port: 11434
+  targetPort: 11434
+
+

@@ -1,0 +1,10 @@
+FROM ollama/ollama
+
+
+WORKDIR /app
+
+COPY . .
+
+RUN chmod +x pull.sh
+
+ENTRYPOINT ["/usr/bin/bash","pull.sh"]
